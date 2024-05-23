@@ -29,7 +29,7 @@ const useJoinInviteServer = (serverId: string, secretCode: string) => {
       // Check if the member exists in the server
       const memberQuery = query(
         collection(db, `servers/${serverId}/members`),
-        where("profileId", "==", profile?.userId)
+        where("profileId", "==", profile?.userId ?? "")
       );
       const memberSnapshot = await getDocs(memberQuery);
 

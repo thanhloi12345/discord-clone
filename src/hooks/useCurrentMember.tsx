@@ -24,7 +24,7 @@ export function useMemberByProfileId() {
         );
         const q = query(
           membersCollectionRef,
-          where("profileId", "==", profile?.userId)
+          where("profileId", "==", profile?.userId ?? "")
         );
         const querySnapshot = await getDocs(q);
 

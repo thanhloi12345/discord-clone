@@ -2,7 +2,10 @@
 
 # dependencies
 node_modules/
+google-services.json
 
+discord-clone-3ce0b-firebase-adminsdk-hv5jc-672d4d2d2e.json
+.env
 # Expo
 .expo/
 dist/
